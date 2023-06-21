@@ -42,7 +42,7 @@ body {
   transform: skew(-21deg);
 }
 .navigation ul li:hover {
-  color: #941616;
+  color: #8a06a5;
 }
 .navigation ul li::before {
   content: "";
@@ -67,6 +67,15 @@ body {
   color: #fff;
   text-align: center;
 }
+.orange {
+  color: #ff7f50;
+}
+.blue {
+  color: #00bfff;
+}
+.yellow {
+  color: #ffff33;
+}
 .wrapper {
   display: flex;
   align-items: center;
@@ -89,7 +98,7 @@ body {
 }
 .dynamic-texts li {
   list-style: none;
-  color: #9b0a0a;
+  color: #4b0082;
   font-size: 60px;
   font-weight: 500;
   position: relative;
@@ -113,7 +122,7 @@ body {
   height: 100%;
   width: 100%;
   background: #080713;
-  border-left: 2px solid #fc6d6d;
+  border-left: 2px solid #fff;
   animation: typing 3s steps(10) infinite;
 }
 @keyframes typing {
@@ -136,11 +145,11 @@ body {
 .img-content img {
   height: 25rem;
 }
-span img{
+span img {
   height: 254px;
   background-size: cover;
 }
-.projetinho{
+.projetinho {
   background-image: url(./projeto-2.png);
   background-size: cover;
   width: 100%;
@@ -151,14 +160,13 @@ span img{
 p {
   font-size: 20px;
   font-weight: bolder;
-
 }
 .about-me {
   display: flex;
   flex-wrap: wrap;
   color: #fff;
   text-align: right;
-  padding: 20px 0 40px 210px;
+  padding: 20px 20px 40px 210px;
 }
 
 /*cards*/
@@ -183,7 +191,7 @@ p {
   border-radius: 2px;
   transition: all 0.5s;
   background: #212121;
-  border: 1px solid #d92929;
+  border: 1px solid #8a06a5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,7 +199,6 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   animation: pan 4s infinite alternate linear;
-
 }
 @keyframes pan {
   100% {
@@ -218,7 +225,7 @@ p {
   transform: rotate(0);
   font-weight: 800;
   font-size: 25px;
-  color: #9b0a0a;
+  color: #8a06a5;
 }
 .proj {
   text-align: center;
@@ -238,6 +245,7 @@ p {
 .skils img {
   width: 200px;
   height: 200px;
+  padding: 15px;
 }
 .skils:hover {
   transform: translateY(-7px);
@@ -253,29 +261,27 @@ footer h1 {
 }
 @media screen and (max-width: 720px) {
   .navigation ul li {
-    display: none
+    display: none;
   }
-  .wrapper{
-display: block;
-text-align: center;
-font-size: 10px;
+  .wrapper {
+    display: block;
+    text-align: center;
+    font-size: 10px;
   }
 
   .img-content img {
-   display: none    ;
-
+    display: none;
   }
-  .wrapper{
+  .wrapper {
     padding-top: 1rem;
     padding-bottom: 1rem;
-
   }
-  .about-me{
+  .about-me {
     display: flex;
     align-items: center;
     text-align: left;
     font-size: 15px;
-    
+
     padding: 0px 2px 0px 0px;
   }
   .projects {
@@ -285,9 +291,13 @@ font-size: 10px;
   .icons {
     display: flex;
     flex-wrap: wrap;
-      }
+  }
   .skils img {
     padding-left: 2rem;
     width: 100px;
-    height: 100px
+    height: 100px;
+  }
+  .skils {
+    padding: 0px 45px;
+  }
 }
